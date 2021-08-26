@@ -64,9 +64,9 @@ void loop()
       if (mpu.update())
       {
 
-        currentLine = String(millis()) + "," + String(getAccX()) + "," + String(getAccY()) + "," + String(getAccZ()) +
-                      "," + String(getGyroX()) + "," + String(getGyroY()) + "," + String(getGyroZ()) +
-                      "," + String(getMagX()) + "," + String(getMagY()) + "," + String(getMagZ());
+        currentLine = String(millis()) + "," + String(mpu.getAccX()) + "," + String(mpu.getAccY()) + "," + String(mpu.getAccZ()) +
+                      "," + String(mpu.getGyroX()) + "," + String(mpu.getGyroY()) + "," + String(mpu.getGyroZ()) +
+                      "," + String(mpu.getMagX()) + "," + String(mpu.getMagY()) + "," + String(mpu.getMagZ());
 
         client.println(currentLine);
         delay(10);
