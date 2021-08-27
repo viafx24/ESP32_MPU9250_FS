@@ -80,22 +80,30 @@ void setup()
 
   server.begin();
 
-    // calibrate anytime you want to
-    Serial.println("Accel Gyro calibration will start in 5sec.");
-    Serial.println("Please leave the device still on the flat plane.");
-    mpu.verbose(true);
-    delay(5000);
-    mpu.calibrateAccelGyro();
+    // // calibrate anytime you want to
+    // Serial.println("Accel Gyro calibration will start in 5sec.");
+    // Serial.println("Please leave the device still on the flat plane.");
+    // mpu.verbose(true);
+    // delay(5000);
+    // mpu.calibrateAccelGyro();
 
-    Serial.println("Mag calibration will start in 5sec.");
-    Serial.println("Please Wave device in a figure eight until done.");
-    delay(5000);
-    mpu.calibrateMag();
+    // Serial.println("Mag calibration will start in 5sec.");
+    // Serial.println("Please Wave device in a figure eight until done.");
+    // delay(5000);
+    // mpu.calibrateMag();
 
-    print_calibration();
-    mpu.verbose(false);
+    // print_calibration();
+    // mpu.verbose(false);
 
 
+mpu.setAccBias(1013.52, 19.45, 996.83);
+mpu.setGyroBias(0.09, 1.55, 4.78);
+mpu.setMagBias(113.95, 329.77, -416.71);
+mpu.setMagScale(1.09, 0.99, 0.94);
+mpu.setMagneticDeclination(2);
+
+
+mpu.setFilterIterations(10);
 
 }
 
