@@ -131,7 +131,9 @@ void loop()
         currentLine = String(millis()) + "," + String(mpu.getAccX()) + "," + String(mpu.getAccY()) + "," + String(mpu.getAccZ()) +
                       "," + String(mpu.getGyroX()) + "," + String(mpu.getGyroY()) + "," + String(mpu.getGyroZ()) +
                       "," + String(mpu.getMagX()) + "," + String(mpu.getMagY()) + "," + String(mpu.getMagZ()) +
-                      "," + String(mpu.getRoll()) + "," + String(mpu.getPitch()) + "," + String(mpu.getYaw()) ;
+                      "," + String(mpu.getRoll()) + "," + String(mpu.getPitch()) + "," + String(mpu.getYaw()) +
+                      "," + String(mpu.getQuaternionX()) + "," + String(mpu.getQuaternionY()) + "," + String(mpu.getQuaternionZ()) +
+                       "," + String(mpu.getQuaternionW()) ;
 
         
 
