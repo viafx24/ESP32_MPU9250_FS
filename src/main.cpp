@@ -8,8 +8,8 @@ const char *ssid = "SFR_5DD8";
 const char *password = "uguele2vocuminhonext";
 
 // to set the static IP address to 192, 168, 1, 184
-IPAddress local_IP(192, 168, 0, 20);
-IPAddress gateway(192, 168, 0, 254);
+IPAddress local_IP(192, 168, 1, 50);
+IPAddress gateway(192, 168, 1, 1);
 IPAddress subnet(255, 255, 255, 0);
 
 WiFiServer server(80);
