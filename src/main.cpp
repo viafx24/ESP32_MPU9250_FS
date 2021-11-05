@@ -4,8 +4,8 @@
 
 // Wifi
 
-const char *ssid = "freebox_OOKMJG";
-const char *password = "38100Alexandre!";
+const char *ssid = "SFR_5DD8";
+const char *password = "uguele2vocuminhonext";
 
 // to set the static IP address to 192, 168, 1, 184
 IPAddress local_IP(192, 168, 0, 20);
