@@ -4,7 +4,7 @@
 
 // Wifi
 
-const char *ssid = "SFR_5DD8";
+const char *ssid = "SFR_EC58";
 //const char *password = "uguele2vocuminhonext";// parents
 const char *password = "96wwza4yfz24qhtc4mxq";// hameau
 
