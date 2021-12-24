@@ -5,10 +5,12 @@
 // Wifi
 
 const char *ssid = "SFR_5DD8";
-const char *password = "uguele2vocuminhonext";
+//const char *password = "uguele2vocuminhonext";// parents
+const char *password = "96wwza4yfz24qhtc4mxq";// hameau
+
 
 // to set the static IP address to 192, 168, 1, 184
-IPAddress local_IP(192, 168, 1, 50);
+IPAddress local_IP(192, 168, 1, 64);
 IPAddress gateway(192, 168, 1, 1);
 IPAddress subnet(255, 255, 255, 0);
 
